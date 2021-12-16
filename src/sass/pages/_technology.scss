@@ -1,0 +1,21 @@
+.body-technology{
+    background-image: url(src/assets/technology/background-technology-desktop.jpg);
+    @include bg;
+    @media (max-width:768px){
+        background-image: url(src/assets/technology/background-technology-tablet.jpg); 
+    }
+    @media (max-width:450px){
+        background-image: url(src/assets/technology/background-technology-mobile.jpg);
+    }
+}
+
+.main-technology{
+    margin-top: 76px;
+    margin-left: 165px;
+    margin-bottom: 101px;
+    @media (max-width:769px){
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+}
+

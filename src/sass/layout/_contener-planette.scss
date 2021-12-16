@@ -1,0 +1,46 @@
+.contener-planette{
+    margin-left: 166px;
+    margin-top: 76px;
+    @media (max-width:769px) {
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    @media (max-width:450px){
+        margin-top: 24px;
+    }
+    &__heading5{
+        @include heading5;
+        color: var(--clr-secondary);
+        @media (max-width:769px) {
+            text-align: start;
+            margin-left: 39px;
+        }
+        @media (max-width:450px){
+            text-align: center;
+            margin-left: 0px;
+        }
+        span{
+            opacity: 25%;
+        }
+    }
+    &__image{
+        margin-left: 64px;
+        margin-top: 97px;
+        @media (max-width:769px) {
+            margin-left: 234px;
+            margin-top: 60px;   
+        }
+        @media (max-width:450px){
+            margin-top: 32px;
+            margin-left: 0px;
+        }
+        img{
+            @media (max-width:769px) {
+                width: 300px;
+            }
+            @media (max-width:450px){
+                width: 170px;
+            }
+        }
+    }
+}

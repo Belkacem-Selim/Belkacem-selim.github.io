@@ -1,0 +1,115 @@
+.contener-technology{
+     
+    &__heading5{
+        @include heading5;
+        color: var(--clr-tertiary);
+        @media (max-width:769px){
+            text-align: start;
+            margin-left: 39px;
+        }
+        @media(max-width:450px){
+            margin-left: 0px;
+            text-align: center;
+        }
+        span{
+            opacity: 25%;
+        }
+    }
+}
+
+.contener-picture-description{
+    display: flex;
+
+    @media (max-width:769px){
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 60px;
+    }
+    @media(max-width: 450px){
+        margin-top: 32px;
+    }
+}
+
+.contener-nav-description{
+    display: flex;
+    margin-top: 105px;
+    @media (max-width:769px){
+        flex-direction: column;
+        margin-top: 72px;
+
+    }
+    @media (max-width:450px){
+        margin-top: 40px;
+    }
+}
+
+.technology-description{
+    &__nav-text{
+        @include nav-text;
+        color: var(--clr-secondary);
+    }
+    &__heading3{
+        @include heading3;
+        color: var(--clr-tertiary);
+        margin-top: 11px;
+        @media (max-width:769px){
+            margin-top: 16px;
+        }
+    }
+    &__text{
+        margin-right: 20%;
+        @include body-text;
+        color: var(--clr-secondary);
+
+        @media (max-width:769px) {
+            width: 458px;
+            margin:16px auto auto auto;
+            font-size: 16px;
+            
+        }
+        @media (max-width:450px){
+            width: 90%;
+        }
+    }
+
+}
+
+
+.technology-picture{
+    width: 515px;
+    height: 527px;
+    @media (max-width:769px){
+        width: 768px;
+        height: 310px;
+        
+        img{
+            display: none;
+        }
+    }
+    @media (max-width:450px){
+        height: 170px;
+        width: 375px;
+        background-size: cover;
+    }
+}
+
+.technology-picture-vehicule{
+    @media (max-width:769px) {
+        background-image: url(src/assets/technology/image-launch-vehicle-landscape.jpg);
+    }
+}
+
+.technology-picture-capsule{
+    
+    @media (max-width:769px) {
+        background-image: url(src/assets/technology/image-space-capsule-landscape.jpg);
+    }
+}
+
+.technology-picture-spaceport{
+    @media (max-width:769px) {
+        background-image: url(src/assets/technology/image-spaceport-landscape.jpg);
+    }
+}
+
+

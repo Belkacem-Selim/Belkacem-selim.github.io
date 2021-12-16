@@ -1,0 +1,36 @@
+.body-crew{
+    background-image: url(src/assets/crew/background-crew-desktop.jpg);
+    display: flex;
+    flex-direction: column;
+    
+    @include bg;
+    @media (max-width:768px){
+        background-image: url(src/assets/crew/background-crew-tablet.jpg);
+        justify-content: flex-start;
+    }
+    @media (max-width:450px){
+        background-image: url(src/assets/crew/background-crew-mobile.jpg);
+    }
+}
+
+.main-crew{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    @media (max-width:768px){
+        align-items: flex-start;
+    }
+}
+
+.crew-picture{
+    margin: auto auto 0 auto;
+    @media (max-width:450px){
+        order: -1;
+        width: 337px;
+        border-bottom: solid 1px #383B4B;
+        margin-top: 32px;
+        img{
+            height: 223px;
+        }
+    }
+}

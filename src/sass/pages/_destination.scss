@@ -1,0 +1,18 @@
+.body-destination{
+    background-image: url(src/assets/destination/background-destination-desktop.jpg);
+    @include bg;
+    @media (max-width:768px){
+        background-image: url(src/assets/destination/background-destination-tablet.jpg); 
+    }
+    @media (max-width:450px){
+        background-image: url(src/assets/destination/background-destination-mobile.jpg);
+    }
+    
+}
+
+.main-destination{
+    align-items: start;
+    @media (max-width:450px){
+        align-items: center;
+    }
+}

@@ -1,0 +1,104 @@
+
+//fonts
+
+@mixin heading1{
+    font-family: var(--fnt-bellefair);
+    font-size: 150px;
+    text-transform: uppercase;
+    @media (max-width:450px){
+        font-size:80px;
+    }
+}
+@mixin heading2{
+    font-family: var(--fnt-bellefair);
+    font-size: 100px;
+    text-transform: uppercase;
+    @media (max-width:450px){
+        font-size: 56px;
+    }
+}
+@mixin heading3 {
+    font-family: var(--fnt-bellefair);
+    font-size: 56px;
+    text-transform: uppercase;
+    @media (max-width: 768px){
+        font-size: 40px;
+    }
+    @media (max-width:450px){
+        font-size: 24px;
+    }
+}
+
+@mixin heading4 {
+    font-family: var(--fnt-bellefair);
+    font-size: 32px;
+    text-transform: uppercase;
+    @media (max-width:450px){
+        font-size:20px;
+    }
+
+}
+@mixin heading5{
+    font-family: var(--fnt-barlow);
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    text-transform: uppercase;
+    @media (max-width: 768px){
+        font-size: 20px;
+        letter-spacing: 3.4px;
+    }
+    @media (max-width:450px){
+        font-size:16px;
+    }
+}
+
+@mixin subheading1{
+    font-family:var(--fnt-bellefair);
+    font-size:28px;
+    text-transform: uppercase;
+}
+@mixin subheading2{
+    font-family:var(--fnt-barlow);
+    font-size:14px;
+    letter-spacing:2.35px;
+    text-transform: uppercase;
+}
+
+@mixin body-text {
+    font-family: var(--fnt-barlow);
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 1.5px;
+    @media (max-width: 768px){
+        font-size: 16px;
+        line-height: 28px;
+    }
+    
+}
+
+@mixin nav-text {
+    font-family: var(--fnt-barlow);
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    @media (max-width: 768px){
+        font-size: 14px;
+        letter-spacing: 2.4px;
+    }
+}
+@mixin bg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 900px;
+    @media (max-width: 768px){
+        width: 768px;
+        height: 1024px;
+    }
+    @media (max-width: 450px){
+        width: 375px;
+        height: auto;
+    }
+    
+}
+

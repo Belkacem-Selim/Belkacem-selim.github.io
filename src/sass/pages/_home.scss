@@ -1,0 +1,13 @@
+
+
+.body-home{
+    background-image: url(src/assets/home/background-home-desktop.jpg);
+    @include bg;
+    @media (max-width:768px){
+        background-image: url(src/assets/home/background-home-tablet.jpg);
+    }
+    @media (max-width:450px){
+        background-image: url(src/assets/home/background-home-mobile.jpg);
+    }
+}
+
